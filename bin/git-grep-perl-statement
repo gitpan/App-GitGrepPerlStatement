@@ -1,0 +1,11 @@
+#!perl
+
+use strict;
+use warnings;
+
+use 5.014000;
+
+use App::GitGrepPerlStatement;
+
+App::GitGrepPerlStatement->run(@ARGV);
+
