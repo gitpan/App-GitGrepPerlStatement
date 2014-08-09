@@ -28,7 +28,7 @@ no_index:
 provides:
   App::GitGrepPerlStatement:
     file: lib/App/GitGrepPerlStatement.pm
-    version: '0.01'
+    version: '0.02'
   App::GitGrepPerlStatement::StatementFinder:
     file: lib/App/GitGrepPerlStatement/StatementFinder.pm
 requires:
@@ -40,7 +40,7 @@ resources:
   bugtracker: https://github.com/hitode909/git-grep-perl-statement/issues
   homepage: https://github.com/hitode909/git-grep-perl-statement
   repository: git://github.com/hitode909/git-grep-perl-statement.git
-version: '0.01'
+version: '0.02'
 x_contributors:
   - 'Syohei YOSHIDA <syohex@gmail.com>'
   - 'hitode909 <hitode909@gmail.com>'
