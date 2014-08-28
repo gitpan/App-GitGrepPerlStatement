@@ -5,7 +5,7 @@ use warnings;
 use App::GitGrepPerlStatement::StatementFinder;
 use Term::ANSIColor qw(colored);
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 sub run {
     my ($class, @argv) = @_;
@@ -17,7 +17,7 @@ sub run {
         exit 1;
     }
 
-    my @files = split "\n", `git grep --name-only @argv`;
+    my @files = split "\n", `git grep --name-only --cached --word-regexp @{[ quotemeta(join ' ', @argv) ]}`;
 
     my $finder = App::GitGrepPerlStatement::StatementFinder->new($word);
 
